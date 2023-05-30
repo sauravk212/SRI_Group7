@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './components/Login'
-import SignUp from './components/SignUp'
+// import SignUp from './components/SignUp'
 import { auth } from './firebase';
 import { useEffect,useState } from 'react';
 function App() {
@@ -67,15 +67,14 @@ function App() {
     <div>
     <Router>
       <hr style={{width:"10px"}}/>
-
     <div className='mt-5 container ' id="liveAlertPlaceholder"></div>
     {/* <br/> */}
         <Routes>
-            <Route exact path="/" element={<Area uid={Userid } value={timeBasedFood(new Date)} field="type" pagename="home" mode={mode}/> }/>
+            {/* <Route exact path="/" element={<Area uid={Userid } value={timeBasedFood(new Date)} field="type" pagename="home" mode={mode}/> }/> */}
        
             <Route exact path="/login" element={<Login mode={mode}/>}/>
-            <Route exact path="/SignUp" element={<SignUp mode={mode}/>}/>
-            <Route exact path="/Profile" element={<Profile uid={Userid } mode={mode}/>}/>
+            {/* <Route exact path="/SignUp" element={<SignUp mode={mode}/>}/> */}
+            {/* <Route exact path="/Profile" element={<Profile uid={Userid } mode={mode}/>}/> */}
         </Routes>
       </Router>
       </div>
