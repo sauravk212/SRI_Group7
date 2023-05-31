@@ -18,7 +18,7 @@ function logOutAndGoToSignUp()
   logout();
   window.location.replace("/SignUp");
 }
-export default function NavBar() {
+export default function NavBar(props) {
   // useState(()=>{
   //   props.togglemode()
   // },[])
